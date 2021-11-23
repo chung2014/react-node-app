@@ -1,0 +1,12 @@
+client/node_modules/**/*
+client/node_modules
+terry/**/*
+terry
+node_modules/**
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+secret.txt
