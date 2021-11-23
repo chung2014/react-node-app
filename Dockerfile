@@ -8,9 +8,11 @@ COPY package*.json ./
 
 # RUN npm ci --only=production && npm cache clean --force
 
-RUN npm build && npm install
-
 COPY --chown=node:node . .
+
+RUN npm run build
+
+RUN npm install
 
 CMD node server/index.js
 
